@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="haha">
 <meta property="og:description" content="周末整理印象笔记的时候发现好多链接都失效了，一向先马不看的我损失了几个亿。下决心把这个博客给弄好了，记录下过程吧。懒得去弄域名和付费的图床所以采用了Hexo+Github方案。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-12T09:54:30.152Z">
+<meta property="og:updated_time" content="2019-08-30T01:47:26.437Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello Bolg">
 <meta name="twitter:description" content="周末整理印象笔记的时候发现好多链接都失效了，一向先马不看的我损失了几个亿。下决心把这个博客给弄好了，记录下过程吧。懒得去弄域名和付费的图床所以采用了Hexo+Github方案。">
@@ -348,6 +348,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <p>发布。</p>
+<h3 id="配置域名"><a href="#配置域名" class="headerlink" title="配置域名"></a>配置域名</h3><p>架不住微信限制github.io的相关域名，我只好去申请了腾讯云的域名。</p>
+<ol>
+<li>买外域名后添加解析。先ping到自己原来xxx.github.io下的ip地址，然后添加上去。</li>
+<li>找到工程下<code>_config.yml</code>配置静态资源路径，URL由原来的xxx.github.io变为自己的域名，root视自己的配置而定。</li>
+<li>在github的仓库pages下设置自己的自定义域名。保存后即可。</li>
+</ol>
 
       
     </div>
@@ -494,7 +500,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-介绍"><span class="nav-number">1.1.</span> <span class="nav-text">Hexo 介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-cli安装"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo-cli安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化本地工程目录"><span class="nav-number">1.3.</span> <span class="nav-text">初始化本地工程目录</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github"><span class="nav-number">2.</span> <span class="nav-text">Github</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化Github仓库"><span class="nav-number">2.1.</span> <span class="nav-text">初始化Github仓库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客主题设置"><span class="nav-number">3.</span> <span class="nav-text">博客主题设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#工程配置"><span class="nav-number">3.1.</span> <span class="nav-text">工程配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下载Next主题"><span class="nav-number">3.2.</span> <span class="nav-text">下载Next主题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布文章"><span class="nav-number">4.</span> <span class="nav-text">发布文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-介绍"><span class="nav-number">1.1.</span> <span class="nav-text">Hexo 介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-cli安装"><span class="nav-number">1.2.</span> <span class="nav-text">Hexo-cli安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化本地工程目录"><span class="nav-number">1.3.</span> <span class="nav-text">初始化本地工程目录</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github"><span class="nav-number">2.</span> <span class="nav-text">Github</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化Github仓库"><span class="nav-number">2.1.</span> <span class="nav-text">初始化Github仓库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客主题设置"><span class="nav-number">3.</span> <span class="nav-text">博客主题设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#工程配置"><span class="nav-number">3.1.</span> <span class="nav-text">工程配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下载Next主题"><span class="nav-number">3.2.</span> <span class="nav-text">下载Next主题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布文章"><span class="nav-number">4.</span> <span class="nav-text">发布文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置域名"><span class="nav-number">5.</span> <span class="nav-text">配置域名</span></a></li></ol></div>
             
 
           </div>
